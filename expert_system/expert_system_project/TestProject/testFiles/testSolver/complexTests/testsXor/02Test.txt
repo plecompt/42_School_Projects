@@ -1,0 +1,26 @@
+﻿A ^ B ^ C => D
+D ^ E => F
+
+=A
+?F
+
+=B
+?F
+
+=C
+?F
+
+=AC
+?F
+
+=AE
+?F
+
+=BE
+?F
+
+=CE
+?F
+
+=ACE
+?F

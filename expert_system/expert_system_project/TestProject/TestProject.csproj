@@ -1,0 +1,577 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="testFiles\testParser\invalidsTests\01Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\02Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\03Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\04Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\05Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\06Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\07Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\08Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\09Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\10Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\11Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\12Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\13Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\14Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\15Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\16Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\17Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\18Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\19Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\20Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\21Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\22Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\23Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\24Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\25Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\26Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\27Test.txt" />
+    <None Remove="testFiles\testParser\invalidsTests\28Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\01Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\02Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\03Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\04Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\05Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\06Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\07Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\08Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\09Test.txt" />
+    <None Remove="testFiles\testParser\validsTests\10Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsAnd\01Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsAnd\02Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsAnd\03Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsAnd\04Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsAnd\05Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsAnd\06Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsAnd\07Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsContradiction\01Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsContradiction\02Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsContradiction\03Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsContradiction\04Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsContradiction\05Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsContradiction\06Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsImplie\01Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsImplie\02Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsImplie\03Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsImplie\04Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsImplie\05Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsImplie\06Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\01Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\02Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\03Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\04Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\05Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\06Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\07Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\08Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsMixed\09Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsNot\01Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsNot\02Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsNot\03Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsNot\04Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsNot\05Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsNot\06Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsOr\01Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsOr\02Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsOr\03Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsOr\04Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsOr\05Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsParenthesis\01Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsParenthesis\02Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsParenthesis\03Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsXor\01Test.txt" />
+    <None Remove="testFiles\testSolver\complexTests\testsXor\02Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsAnd\01Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsAnd\02Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsAnd\03Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsAnd\04Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsAnd\05Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsImplie\01Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsImplie\02Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsImplie\03Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsImplie\04Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsImplie\05Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsImplie\06Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\01Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\02Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\03Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\04Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\05Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\06Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\07Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\08Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\09Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\10Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\11Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\12Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\13Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\14Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\15Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\16Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsNot\17Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsOr\01Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsOr\02Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsOr\03Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsOr\04Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsOr\05Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\01Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\02Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\03Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\04Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\05Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\06Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\07Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\08Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\09Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\10Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\11Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\12Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\13Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\14Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\15Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\16Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsParenthesis\17Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsXor\01Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsXor\02Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsXor\03Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsXor\04Test.txt" />
+    <None Remove="testFiles\testSolver\simpleTests\testsXor\05Test.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="testFiles\testParser\invalidsTests\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\07Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\08Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\09Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\10Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\11Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\12Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\13Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\14Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\15Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\16Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\17Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\18Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\19Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\20Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\21Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\22Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\23Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\24Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\25Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\26Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\27Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\invalidsTests\28Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\07Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\08Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\09Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testParser\validsTests\10Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsAnd\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsAnd\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsAnd\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsAnd\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsAnd\07Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsAnd\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsAnd\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsContradiction\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsContradiction\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsContradiction\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsContradiction\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsContradiction\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsContradiction\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsImplie\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsImplie\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsImplie\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsImplie\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsImplie\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsImplie\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\08Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\07Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsMixed\09Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsNot\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsNot\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsNot\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsNot\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsNot\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsNot\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsOr\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsOr\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsOr\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsOr\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsOr\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsParenthesis\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsParenthesis\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsParenthesis\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsXor\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\complexTests\testsXor\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsAnd\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsAnd\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsAnd\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsAnd\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsAnd\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsImplie\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsImplie\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsImplie\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsImplie\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsImplie\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsImplie\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\07Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\08Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\09Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\10Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\11Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\12Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\13Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\14Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\15Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\16Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsNot\17Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsOr\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsOr\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsOr\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsOr\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsOr\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsXor\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsXor\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsXor\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsXor\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsXor\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExpertSystem\ExpertSystem.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\01Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\02Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\03Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\04Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\05Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\06Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\07Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\08Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\09Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\10Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\11Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\12Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\13Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\14Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\15Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\16Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testFiles\testSolver\simpleTests\testsParenthesis\17Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

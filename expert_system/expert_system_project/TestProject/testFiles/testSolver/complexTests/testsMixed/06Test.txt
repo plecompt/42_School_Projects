@@ -1,0 +1,13 @@
+﻿(A + B) + ((B ^ C) + (C | D)) + (E + F) => G
+
+=ABDEF
+?G
+
+=ABC
+?G
+
+=AF
+?G
+
+=ABD
+?G

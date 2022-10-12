@@ -1,0 +1,9 @@
+000000010000375b	e8 f0 0c 00 00 	callq	_ft_memalloc
+0000000100003a54	e8 f7 09 00 00 	callq	_ft_memalloc
+00000001000040d2	e8 77 55 00 00 	callq	0x10000964e ## symbol stub for: _malloc
+_ft_memalloc:
+0000000100004472	e8 d7 51 00 00 	callq	0x10000964e ## symbol stub for: _malloc
+0000000100007a2a	e8 21 ca ff ff 	callq	_ft_memalloc
+0000000100009208	e8 41 04 00 00 	callq	0x10000964e ## symbol stub for: _malloc
+0000000100009494	e8 b7 af ff ff 	callq	_ft_memalloc
+0000000100009512	e8 39 af ff ff 	callq	_ft_memalloc

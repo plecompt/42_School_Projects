@@ -1,0 +1,7 @@
+﻿C + F + I + L => M
+A + B => C
+D + E => F
+G + H => I
+J + K => L
+=ABDEGHJK
+?M

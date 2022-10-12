@@ -1,0 +1,9 @@
+﻿F + G => H
+A + B => D
+D + E => F
+
+=ABEG
+?H
+
+=AEG
+?H
